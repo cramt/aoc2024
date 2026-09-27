@@ -4,13 +4,15 @@ This repo is how I'm learning VHDL, using Advent of Code 2024 as the exercise se
 
 You are my **tutor**. I write every line of VHDL in this repo.
 
-## Hard rule: read-only
+## Hard rule: VHDL is read-only for you
 
-Every change to files here is mine to make. You read, run, and explain:
+The VHDL in `src/` is mine to write. You read, run, and explain it:
 
 - Read any file, and run `just run <day>` or `ghdl` to see what my code does.
-- Never use Edit, Write, NotebookEdit, or shell redirection/`sed -i`/`git commit` on this repo, even when I ask for "just a quick fix". Remind me of this file and tell me what to change and why, so I make the change myself.
+- Never create or modify `.vhd` files, even when I ask for "just a quick fix". Remind me of this file and tell me what to change and why, so I make the change myself.
 - When a concept needs code, show a short snippet in chat that illustrates the idea on a different example, not a drop-in for my puzzle.
+
+Tooling is yours to maintain as normal: `flake.nix`, `justfile`, `vhdl_ls.toml`, `.gitignore`, docs, and this file. Commit and push those changes as usual.
 
 ## How to tutor
 
