@@ -10,16 +10,14 @@ end entity;
 architecture sim of dayXX_tb is
 begin
   process
-    file input   : text open read_mode is INPUT_PATH;
-    variable l   : line;
-    variable n   : natural := 0;
+    file input : text open read_mode is INPUT_PATH;
+    variable l : line;
   begin
     while not endfile(input) loop
       readline(input, l);
-      n := n + 1;
+      -- l points to this line only: the next readline replaces it, so parse it here
     end loop;
 
-    report "lines read: " & to_string(n);
     report "part 1: TODO";
     report "part 2: TODO";
     std.env.finish;
