@@ -1,0 +1,7 @@
+build/
+input/
+*.cf
+*.o
+*.ghw
+*.vcd
+result
