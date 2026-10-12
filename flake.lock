@@ -18,6 +18,22 @@
         "type": "github"
       }
     },
+    "jhdl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791296110,
+        "narHash": "sha256-zcZvgm5U8gWQqnUXCleEZHvT97LdIo5nGQoHJ0RpOv8=",
+        "owner": "A-H-Technology",
+        "repo": "JHDL",
+        "rev": "7d1c4878ee91ae228cb23df2e6fcb3c1b8dc928b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "A-H-Technology",
+        "repo": "JHDL",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1790463110,
@@ -37,6 +53,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "jhdl": "jhdl",
         "nixpkgs": "nixpkgs"
       }
     },

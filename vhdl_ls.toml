@@ -1,2 +1,2 @@
 [libraries]
-defaultlib.files = ["src/*.vhd"]
+defaultlib.files = ["day*/*.vhd", "template/*.vhd"]
