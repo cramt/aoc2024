@@ -1,0 +1,8 @@
+[deps]
+JHDL = "6553cf94-aa48-41cb-aa4d-70f1d3ad81e6"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+# Manifest.toml pins the commit; `just julia-update` moves it to the tip of main
+[sources]
+JHDL = {url = "https://github.com/A-H-Technology/JHDL", rev = "main"}

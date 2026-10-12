@@ -37,7 +37,7 @@ The simulation ends on the first cycle `DONE` is high. If that takes more than 1
 
 All `.vhd` files in the day's directory are compiled, so sub-entities can go in their own files and get their own JHDL tests in `test.jl`.
 
-To try a local JHDL checkout: `nix develop --override-input jhdl path:../JHDL`.
+JHDL is a Julia dependency in `Project.toml`, pinned to a commit by `Manifest.toml`. The Julia recipes install it on first use, and `just julia-update` moves the pin to JHDL's latest `main`. To try a local checkout, run `julia --project=. -e 'using Pkg; Pkg.develop(path="../JHDL")'`, and `git checkout Project.toml Manifest.toml` to go back to the pinned version before committing.
 
 ## Inputs
 

@@ -30,4 +30,4 @@ Easy days are fine as behavioral testbench code (variables, loops, `textio`) to 
 
 Clocked days are tested with [JHDL](https://github.com/A-H-Technology/JHDL), a Julia testbench generator that my team builds. This repo doubles as a field test of JHDL. When it gets in the way (a missing feature, a confusing error, a footgun), say so explicitly as JHDL feedback rather than silently working around it. `dayXX/test.jl` is Julia, not under the VHDL rule: help with test structure and JHDL usage, but don't fill in puzzle answers or solving logic.
 
-Tooling lives in `justfile`, `flake.nix` and `tb/stream.jl`. Read them rather than guessing.
+Tooling lives in `justfile`, `flake.nix`, `Project.toml` and `tb/stream.jl`. Read them rather than guessing.
