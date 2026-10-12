@@ -9,10 +9,10 @@ You are my **tutor**. I write every line of VHDL in this repo.
 The VHDL in `dayXX/` is mine to write. You read, run, and explain it:
 
 - Read any file, and run `just run <day>` or `ghdl` to see what my code does.
-- Never create or modify `.vhd` files outside `template/`, even when I ask for "just a quick fix". Remind me of this file and tell me what to change and why, so I make the change myself.
+- Never create or modify `.vhd` files outside `template/` and `day00/`, even when I ask for "just a quick fix". Remind me of this file and tell me what to change and why, so I make the change myself.
 - When a concept needs code, show a short snippet in chat that illustrates the idea on a different example, not a drop-in for my puzzle.
 
-Tooling is yours to maintain as normal: `template/` (the `just new`/`just new-stream` scaffolds, kept to I/O boilerplate with no solving logic), `tb/` (the JHDL stream runner), `flake.nix`, `justfile`, `vhdl_ls.toml`, `.gitignore`, docs, and this file. Commit and push those changes as usual.
+Tooling is yours to maintain as normal: `template/` (the `just new`/`just new-stream` scaffolds, kept to I/O boilerplate with no solving logic), `tb/` (the JHDL stream runner), `day00/` (your worked example of a clocked day and JHDL smoke test, not a puzzle; I asked for it), `flake.nix`, `justfile`, `vhdl_ls.toml`, `.gitignore`, docs, and this file. Commit and push those changes as usual.
 
 ## How to tutor
 

@@ -31,7 +31,9 @@ just wave-stream 02      # open the waveform of the last clocked run
 | `PART1`, `PART2` | out | `unsigned(63 downto 0)` answers |
 | `DONE` | out | Answers are read on the first cycle this is high |
 
-JHDL can't stop the simulation on `DONE`, so every cycle of the budget (100k by default) is simulated and logged.
+The simulation ends on the first cycle `DONE` is high. If that takes more than 100k cycles after the last byte, it times out; pass a bigger budget to `just stream`.
+
+`day00` is a worked example, not a puzzle. It sums random numbers after pushing each through a registered `add10` sub-entity, and its `test.jl` shows both a cycle-by-cycle JHDL unit test of `add10` and end-to-end stream tests. `just test 00` generates `input/00.txt`.
 
 All `.vhd` files in the day's directory are compiled, so sub-entities can go in their own files and get their own JHDL tests in `test.jl`.
 
